@@ -42,8 +42,8 @@ function Home() {
       </div>
       <div class="info">
         <input class="fname" type="text" name="adminid" placeholder="Admin Id"/>
-        <input type="text" name="Password" placeholder="Password"/>
-        <input type="text" name="ConfirmPassword" placeholder="Confirm Password"/>
+        <input class="pwd" type="password" name="Password" placeholder="Password"/>
+        <input class="cpwd" type="password" name="ConfirmPassword" placeholder="Confirm Password"/>
       </div>
       <button type="submit" Link to="/about" href="/">Submit</button>
     </form>
@@ -54,15 +54,17 @@ function Home() {
 function About() {
   return (
     <div class="aa-main-block">
-      <div class="block-item left">
+      <div class="aa-headers">
         <h1>Access Table</h1>
-        <p><small>Welcome Admin, What table do you want to access ?</small>
+        <p><small>Welcome Admin, What table do you want to access?</small>
         </p>
       </div>
-      <div class="block-item right">
-        <button value="Teacher"  class="btn facebook"/>Teacher
-        <button class="btn twitter"/>Student
-        <button class="btn google"/>Admin
+      <div class="aa-body">
+      <select>
+      <option value="Admin">Admin</option>
+      <option value="Faculty">Faculty</option>
+      <option selected value="Student">Student</option>
+      </select>
       </div>
     </div>
   );
@@ -86,8 +88,9 @@ function Topics() {
           <input type="text" name="Section" placeholder="Section"/>
           <input type="text" name="Department" placeholder="Department"/>
           <input type="text" name="Semester" placeholder="Semester"/>
+          <input type="text" name="Preference" placeholder="Preference for Faculty"/>
         </div>
-        <button type="submit" href="/">Submit</button>
+        <button type="submit" href="/www.google.com">Submit</button>
       </form>
     </div>
   );
