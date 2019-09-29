@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-# npm install --save
+### npm install --save
 
-# npm install react-router-dom --save
+### npm install react-router-dom --save
 
